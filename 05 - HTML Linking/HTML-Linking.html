@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+  <title>HTML-Linking</title>
+  </head>
+  <body>
+    <a href="https://www.google.ca" target="_blank">google</a>
+
+    <div>
+     <a href="other_file.html">Click me I'm a link!</a>
+     <a href="my_dog.jpg">
+      <img src="my_dog.jpg" alt="A picture of my dog" />
+     </a>
+     <a href="https://google.com">Go to Google</a>
+    </div>
+    <div>
+     <!-- Absolute Path  -->
+     <a href="https://www.yahoo.com">Yahoo!</a>
+     <!-- Relative path -->
+     <a href="C:\Users\1234\Documents\Fax\Inbox">Welcome fax message</a>
+     <!-- If we have to files that are siblings or in the same path level we can use the filename as link
+
+ -->
+    <!-- To link index.html with about.html -->
+    <a href="about.html">About</a>
+    
+    To link about.html with index.html
+    <a href="index.html">Go Home</a>
+    
+    <!-- As index is the main file in our site we could use the root -->
+    <a href="/">Go Home</a>
+    </div>
+    <div>
+     <!-- To link a file that it's inside a folder we'll use the foldername/filename -->
+     / (root of our folder)
+     |-- about/
+     | |--- about.html
+     |
+     |-- index.html
+    </div>
+    <div>
+     <!-- To link index.html with the about.html  -->
+     <a href="about/about.html">About</a>
+<!-- Also we can link files from inside a folder to another that's outside. We will add as many ../ as folders we need to exit
+
+ -->
+ / (root of our folder)
+ |-- about/
+ | |-- other_folder/
+ | |--- about.html
+ |
+ |-- index.html
+    </div>
+    <div>
+     <!-- With this folder structure: To link from index.html to about.html we'll use both folder names -->
+    
+    <a href="about/other_folder/about.html">About</a>
+    
+    To link about.html to index.html we need to exit 2 folders (../../filename)
+    <a href="../../index.html">Go home</a>
+    </div>
+    <div>
+     <h3>More Linking</h3>
+     <p>Here's a few more things you can do with anchor tags</p>
+     <!-- Will open the users mail application -->
+     <a href="mailto:domain@example.com">Email me</a><br>
+     
+     <!-- Will open the users calling application -->
+     <a href="tel:+13061234567">Call me</a><br>
+
+     
+     <!-- Will take the user to the top of the page -->
+     <a href="#">Go top top</a><br>
+     
+     <!-- Will take the user to element that has `id="my-element"` -->
+     <a href="#my-element">Go my element</a>
+     <p id="my-element">Imagine i'm way down the page</p>
+    </div>
+  </body>
+</html>
