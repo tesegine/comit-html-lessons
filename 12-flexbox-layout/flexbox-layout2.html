@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Document</title>
+ <link rel="stylesheet" href="/commit.css/commit.css">
+
+ <style>
+  body {
+  box-sizing: border-box;
+  background: mediumturquoise;
+  /* color: white; */
+}
+
+header {
+  background: teal;
+  height: 60px;
+  color: white;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+}
+
+sidebar {
+  flex-direction: column;
+  background: steelblue;
+  flex: 2;
+}
+
+content {
+  flex: 6;
+  text-align: center;
+  background-color: hotpink;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  background-color: greenyellow;
+  margin: 20px;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ </style>
+</head>
+
+<body>
+ <header>Title</header>
+ <div class="container">
+  <sidebar>
+   <div style="white-space:nowrap">Nav Bar</div>
+   <a href="http://google.ca">google</a> <br>
+   <a href="http://amazon.ca">google</a>
+  </sidebar>
+  <content>
+
+   <h1>News news and news</h1>
+   <p>Check out all the different articles we have</p>
+
+   <div class="articles">
+    <article>
+     <h3>Cars</h3>
+     <img src='https://via.placeholder.com/250'></img>
+     <p>Buy and sell cars</p>
+    </article>
+    <article>
+     <h3>Movies</h3>
+     <img src='https://via.placeholder.com/250'></img>
+     <p>What's the deal with all the avengers movies</p>
+    </article>
+    <article>
+     <h3>Gadgets</h3>
+     <img src='https://via.placeholder.com/250'></img>
+     <p>The latest Gadgets</p>
+    </article>
+   </div>
+
+ </div>
+ </content>
+ </div>
+</body>
+
+</html>
